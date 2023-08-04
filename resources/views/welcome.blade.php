@@ -8,14 +8,14 @@
     .checked {
       color: orange;
     }
-    </style> 
-    
+    </style>
+
 <div id="slide_show_in_desktop_mode">
   @include('components.desktopslideshow')
 </div>
 <div id="slide_show_in_mobile_mode">
   @include('components.mobileslideshow')
-</div> 
+</div>
 <!-- About Starts Here -->
 <script>
     $( document ).ready(function() {
@@ -49,10 +49,10 @@
             <p  align="left" class="mx-5" style="margin-top:-30px; font-family: 'Balsamiq Sans', cursive;">
               <a href="{{url('about')}}"  target="_blank" class="btn btn-dark">Know More</a>
               </p>
-                                            
+
         </div>
       </div>
-      
+
 </div>
 
 <!-- About completed Here -->
@@ -62,8 +62,8 @@ $Products=App\Models\Products::where('status','=','1')->get();
 @endphp
 <!-- Products Starts Here -->
 <section id="Products" align="center" class="px-5 wow animated fadeInUpBig fast" style=" font-family: 'Balsamiq Sans', cursive;">
-  
-    <h1 class="black-text" style="font-weight:bold;">PRODUCTS</h1> 
+
+    <h1 class="black-text" style="font-weight:bold;">PRODUCTS</h1>
     <div align="center">
         <p  class="col-md-2" style=" border-bottom: 2px solid #003399;"></p>
     </div>
@@ -95,14 +95,14 @@ $Products=App\Models\Products::where('status','=','1')->get();
                               <span class="fa fa-star checked"></span>
                               <span class="fa fa-star"></span>
                               <span class="fa fa-star"></span>
-                          
+
                             @elseif($item->rating==4)
                             <span class="fa fa-star checked"></span>
                               <span class="fa fa-star checked"></span>
                               <span class="fa fa-star checked"></span>
                               <span class="fa fa-star checked"></span>
                               <span class="fa fa-star"></span>
-                          
+
                             @else
                             <span class="fa fa-star checked"></span>
                               <span class="fa fa-star checked"></span>
@@ -110,29 +110,29 @@ $Products=App\Models\Products::where('status','=','1')->get();
                               <span class="fa fa-star checked"></span>
                               <span class="fa fa-star checked"></span>
                             @endif
-                             
+
                             <br>
-           
+
                <a href="Shop/{{$item->url}}" class="btn  btn-primary    "> Shop Now</a>
-            
+
           </div>
-      </div>  
+      </div>
      @endforeach
 
     </div>
-   
-    <hr class="col-md-6"> 
+
+    <hr class="col-md-6">
 </section>
-<!-- Products Ends Here --> 
+<!-- Products Ends Here -->
 <section  class="slideanim"  id="testimonialsdesktopmode" align="center" style="margin-top:-50px;" >
- 
-     @include('components.testimonialsdesktopmode') 
+
+     @include('components.testimonialsdesktopmode')
 </section>
 <section  class="slideanim"  id="testimonialsmobilemode" align="center"  style="margin-top:-70px;"  >
- 
-  @include('components.testimonialsmobilemode') 
+
+  @include('components.testimonialsmobilemode')
 </section>
- 
+
 <!--Team Starts Here-->
  <div id="Team">
 <div id="teaminthedesktopmode" class="container" align="center" >
@@ -143,15 +143,17 @@ $Products=App\Models\Products::where('status','=','1')->get();
 </div>
  </div>
 <!--Team Ends Here-->
-<!-- ======= Contact Section Starts Here ======= --> 
- 
+<!-- ======= Contact Section Starts Here ======= -->
+
   <section id="contact" class="contact" style="background:white;">
           <div class="container ">
 
             <div class="section-title">
-            
+
               <h2>Contact</h2>
-              <p style=" font-family: 'Balsamiq Sans', cursive;">  </p>
+              <p style=" font-family: 'Balsamiq Sans', cursive;">
+                Available from Monday to Friday - from 9:00 AM until 5:00 PM
+             </p>
             </div>
 
             <div class="row wow animated zoomIn slow">
@@ -161,20 +163,20 @@ $Products=App\Models\Products::where('status','=','1')->get();
                   <div class="address" >
                   <i class="fas fa-map-marker-alt"></i>
                     <h4>Location:</h4>
-                    <p>  Anantapur -515004</p>
+                    <p>Mar Mekhael Street, Beirut, Lebanon</p>
                   </div>
 
                   <div class="email">
                   <i class="fas fa-envelope"></i>
                     <h4>Email:</h4>
-                    <p>rahulvijayanagaram@gmail.com</p>
+                    <p>info@handystuff.com</p>
                   </div>
 
                   <div class="phone">
                   <i class="fas fa-phone"></i>
                     <h4>Call:</h4>
-                    <p>Rahul : +91 9177889021<br>
-Sandeep : +91 9989910822</p>
+                    <p>Fadi: +961 71 301 583</p>
+                    <p>Joe : +961 71 301 583</p>
                   </div>
 
                   <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d412.8581208194774!2d77.6434072228083!3d14.605726057235447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sADI%20Foundation%2C%20%233%20Akuthotapalli%2C%20SKU%2C%20Anantapur%20-515003!5e1!3m2!1sen!2sin!4v1617198303303!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
@@ -207,7 +209,7 @@ Sandeep : +91 9989910822</p>
                     <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
                     <div class="validate"></div>
                   </div>
-                 
+
                   <div class="text-center"><button type="submit">Send Message</button></div>
                 </form>
               </div>
@@ -216,12 +218,12 @@ Sandeep : +91 9989910822</p>
 
           </div>
   </section>
- 
-<!-- ======= Contact Section Ends Here ======= --> 
+
+<!-- ======= Contact Section Ends Here ======= -->
 <p align="center" class="py-2"><br>
    <button class="btn btn-dark" data-toggle="modal" data-target="#modalSocial" >Subscribe to Our News Letter</button>
    </p>
-   
+
 
 <!--Modal: modalSocial-->
 <div class="modal fade" id="modalSocial" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -254,8 +256,8 @@ Sandeep : +91 9989910822</p>
   </div>
 </div>
 <!--Modal: modalSocial-->
-  
-  
+
+
    @if (session('status'))
 
         <script>
@@ -306,7 +308,7 @@ Sandeep : +91 9989910822</p>
 
        <!--Footer-->
        <div class="modal-footer justify-content-center">
-         
+
          <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Close</a>
        </div>
      </div>
@@ -314,7 +316,7 @@ Sandeep : +91 9989910822</p>
    </div>
  </div>
  <!-- Central Modal Medium Success-->
- 
+
  <!-- Central Modal Medium Danger -->
  <div class="modal fade" id="centralModaldanger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
    aria-hidden="true">
@@ -333,7 +335,7 @@ Sandeep : +91 9989910822</p>
        <!--Body-->
        <div class="modal-body">
          <div class="text-center">
-             
+
            <i class="fas fa-exclamation fa-4x mb-3 animated rotateIn"></i>
            <p>@if($errors->any())
     {!! implode('', $errors->all('<div>:message</div>')) !!}
@@ -343,7 +345,7 @@ Sandeep : +91 9989910822</p>
 
        <!--Footer-->
        <div class="modal-footer justify-content-center">
-         
+
          <a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">Close</a>
        </div>
      </div>
@@ -351,6 +353,5 @@ Sandeep : +91 9989910822</p>
    </div>
  </div>
  <!-- Central Modal Medium Danger-->
- 
+
 @endsection
-  
